@@ -1,2 +1,2 @@
-# atahualpa
-Prpyecto de WordPress de Atahualpa Burgers
+# Atahualpa
+Proyecto de WordPress de la web deAtahualpa Burgers
