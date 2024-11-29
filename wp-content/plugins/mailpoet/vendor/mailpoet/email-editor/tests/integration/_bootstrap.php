@@ -23,7 +23,7 @@ use MailPoet\EmailEditor\Engine\Templates\Utils;
 use MailPoet\EmailEditor\Engine\Theme_Controller;
 use MailPoet\EmailEditor\Integrations\Core\Initializer;
 use MailPoet\EmailEditor\Integrations\MailPoet\Blocks\BlockTypesController;
-use MailPoet\EmailEditor\Utils\Cdn_Asset_Url;
+use MailPoet\EmailEditor\Engine\Send_Preview_Email;
 if ( (bool) getenv( 'MULTISITE' ) === true ) {
  // REQUEST_URI needs to be set for WP to load the proper subsite where MailPoet is activated.
  $_SERVER['REQUEST_URI'] = '/' . getenv( 'WP_TEST_MULTISITE_SLUG' );
@@ -36,6 +36,7 @@ $console->writeln( 'Loading WP core... (' . $wp_load_file . ')' );
 require_once $wp_load_file;
 abstract class MailPoetTest extends \Codeception\TestCase\Test { // phpcs:ignore
  public Container $di_container;
+ public $tester;
  // phpcs:disable WordPress.NamingConventions.ValidVariableName.PropertyNotSnakeCase
  protected $backupGlobals = false;
  protected $backupStaticAttributes = false;
@@ -66,12 +67,6 @@ abstract class MailPoetTest extends \Codeception\TestCase\Test { // phpcs:ignore
  Initializer::class,
  function () {
  return new Initializer();
- }
- );
- $container->set(
- Cdn_Asset_Url::class,
- function () {
- return new Cdn_Asset_Url( 'http://localhost' );
  }
  );
  $container->set(
@@ -129,10 +124,8 @@ abstract class MailPoetTest extends \Codeception\TestCase\Test { // phpcs:ignore
  );
  $container->set(
  Patterns::class,
- function ( $container ) {
- return new Patterns(
- $container->get( Cdn_Asset_Url::class ),
- );
+ function () {
+ return new Patterns();
  }
  );
  $container->set(
@@ -212,6 +205,14 @@ abstract class MailPoetTest extends \Codeception\TestCase\Test { // phpcs:ignore
  }
  );
  $container->set(
+ Send_Preview_Email::class,
+ function ( $container ) {
+ return new Send_Preview_Email(
+ $container->get( Renderer::class ),
+ );
+ }
+ );
+ $container->set(
  Email_Editor::class,
  function ( $container ) {
  return new Email_Editor(
@@ -220,6 +221,7 @@ abstract class MailPoetTest extends \Codeception\TestCase\Test { // phpcs:ignore
  $container->get( Template_Preview::class ),
  $container->get( Patterns::class ),
  $container->get( Settings_Controller::class ),
+ $container->get( Send_Preview_Email::class ),
  );
  }
  );
