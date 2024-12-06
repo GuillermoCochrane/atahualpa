@@ -1,1 +1,75 @@
-.mcb-section .mcb-wrap .mcb-item-ry85obeks .page-title{text-align:center;}.mcb-section-ojm2ms5b{padding-top:220px;padding-bottom:60px;background-color:#000000;}.mcb-section .mcb-wrap .mcb-item-l2zmxdims ul.products li.product{padding-bottom:40px;}.mcb-section .mcb-wrap .mcb-item-l2zmxdims .shop-filters a.open-filters{color:#122924;}.mcb-section .mcb-wrap .mcb-item-l2zmxdims ul.products li.product .price{font-family:'Big Shoulders Text';color:#FACE00;}.mcb-section .mcb-wrap .mcb-item-l2zmxdims ul.products li.product .excerpt{font-family:Big Shoulders Text;}.mcb-section .mcb-wrap .mcb-item-l2zmxdims .shop-filters .woocommerce-ordering select{border-style:solid;border-width:1px 1px 1px 1px;padding-top:20px;padding-right:24px;padding-bottom:20px;padding-left:24px;font-size:14px;font-family:Big Shoulders Text;color:#FACE00;background:#000000;border-color:#FACE00;}.mcb-section .mcb-wrap .mcb-item-l2zmxdims .woocommerce-result-count{font-family:Big Shoulders Text;color:#EBEBEB;}.mcb-section .mcb-wrap .mcb-item-l2zmxdims .shop-filters .mfn-woo-list-options form.mfn-before-products-list-form{font-family:Big Shoulders Text;}.mcb-section .mcb-wrap .mcb-item-l2zmxdims ul.products li.product .title{color:#FACE00;}.mcb-section .mcb-wrap .mcb-item-l2zmxdims .shop-filters a.open-filters svg .path, .mcb-section .mcb-wrap .mcb-item-l2zmxdims .shop-filters .mfn-woo-list-options ul li{--mfn-woo-icon-option:#FACE00;}.mcb-section-xo1gmrlyj{padding-top:40px;background-color:#000000;}@media(max-width: 959px){.mcb-section-ojm2ms5b{padding-top:140px;}}@media(max-width: 767px){.mcb-section-ojm2ms5b{padding-top:120px;}}
+.mcb-section .mcb-wrap .mcb-item-ry85obeks .page-title {
+  text-align: center;
+}
+
+.mcb-section-ojm2ms5b {
+  padding-top: 220px;
+  padding-bottom: 60px;
+  background-color: #000000;
+}
+
+.mcb-section .mcb-wrap .mcb-item-l2zmxdims ul.products li.product {
+  padding-bottom: 40px;
+}
+
+.mcb-section .mcb-wrap .mcb-item-l2zmxdims .shop-filters a.open-filters {
+  color: #122924;
+}
+
+.mcb-section .mcb-wrap .mcb-item-l2zmxdims ul.products li.product .price {
+  font-family: 'Big Shoulders Text';
+  color: #FACE00;
+}
+
+.mcb-section .mcb-wrap .mcb-item-l2zmxdims ul.products li.product .excerpt {
+  font-family: Big Shoulders Text;
+}
+
+.mcb-section .mcb-wrap .mcb-item-l2zmxdims .shop-filters .woocommerce-ordering select {
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  font-size: 14px;
+  font-family: Big Shoulders Text;
+  color: #FACE00;
+  background: #000000;
+  border-color: #FACE00;
+}
+
+.mcb-section .mcb-wrap .mcb-item-l2zmxdims .woocommerce-result-count {
+  font-family: Big Shoulders Text;
+  color: #EBEBEB;
+}
+
+.mcb-section .mcb-wrap .mcb-item-l2zmxdims .shop-filters .mfn-woo-list-options form.mfn-before-products-list-form {
+  font-family: Big Shoulders Text;
+}
+
+.mcb-section .mcb-wrap .mcb-item-l2zmxdims ul.products li.product .title {
+  color: #FACE00;
+}
+
+.mcb-section .mcb-wrap .mcb-item-l2zmxdims .shop-filters a.open-filters svg .path,
+.mcb-section .mcb-wrap .mcb-item-l2zmxdims .shop-filters .mfn-woo-list-options ul li {
+  --mfn-woo-icon-option: #FACE00;
+}
+
+.mcb-section-xo1gmrlyj {
+  padding-top: 40px;
+  background-color: #000000;
+}
+
+@media(max-width: 959px) {
+  .mcb-section-ojm2ms5b {
+    padding-top: 140px;
+  }
+}
+
+@media(max-width: 767px) {
+  .mcb-section-ojm2ms5b {
+    padding-top: 120px;
+  }
+}
